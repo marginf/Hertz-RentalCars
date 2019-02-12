@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Melbourne Airport - Hertz</name>
+   <name>Melbourne Airport - Current Utilisation</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ab7277f5-4116-4044-8169-088d704a07be</testCaseGuid>

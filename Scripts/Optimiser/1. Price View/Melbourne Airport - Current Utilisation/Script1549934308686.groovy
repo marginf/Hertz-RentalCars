@@ -104,7 +104,7 @@ WebUI.click(findTestObject('Optimiser/1. Price View/Select_Duration'))
 
 //'Select View Type' -
 WebUI.click(findTestObject('Optimiser/1. Price View/Select_View Type'))
-WebUI.selectOptionByLabel(findTestObject('Optimiser/1. Price View/Select_View Type'),'Forecast Utilisation',false)
+WebUI.selectOptionByLabel(findTestObject('Optimiser/1. Price View/Select_View Type'),'Current Utilisation',false)
 //Other options: Current Rates,Forecast Utilisation,Current Utilisation,Recommended V Current,Availability
 
 try {
