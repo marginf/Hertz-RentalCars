@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Input_Row1_Cell1</name>
+   <tag></tag>
+   <elementGuidId>b2e9fda1-793f-45df-ba1e-d7d94357c7cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;confirmDisplayTable&quot;]/tbody/tr[1]/td[5]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;confirmDisplayTable&quot;]/tbody/tr[1]/td[5]/input</value>
+   </webElementProperties>
+</WebElementEntity>

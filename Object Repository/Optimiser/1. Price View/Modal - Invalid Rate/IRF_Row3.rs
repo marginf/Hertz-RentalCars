@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>IRF_Row3</name>
+   <tag></tag>
+   <elementGuidId>dc4b034f-daa0-4ab2-b7d1-192f6852b153</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;inVildRatesTable&quot;]/tbody/tr[3]/td[5]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;inVildRatesTable&quot;]/tbody/tr[3]/td[5]</value>
+   </webElementProperties>
+</WebElementEntity>

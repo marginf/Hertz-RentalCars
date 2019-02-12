@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Season-Option</name>
+   <tag></tag>
+   <elementGuidId>deffbc06-5206-4c99-b5d6-97f995802d97</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;collapseExample&quot;]/div/div[3]/div[1]/div/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;collapseExample&quot;]/div/div[3]/div[1]/div/div/button</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LoHDiffs-Option</name>
+   <tag></tag>
+   <elementGuidId>d988ed54-5eff-4e4a-b7fb-db00b9a0c0a8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;collapseExample&quot;]/div/div[5]/div[1]/div/select</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;collapseExample&quot;]/div/div[5]/div[1]/div/select</value>
+   </webElementProperties>
+</WebElementEntity>

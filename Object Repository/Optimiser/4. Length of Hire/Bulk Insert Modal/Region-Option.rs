@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Region-Option</name>
+   <tag></tag>
+   <elementGuidId>4008b19a-0dc8-4bd1-9454-8e0ea454fe75</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;collapseExample&quot;]/div/div[1]/div[1]/div/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;collapseExample&quot;]/div/div[1]/div[1]/div/div/button</value>
+   </webElementProperties>
+</WebElementEntity>

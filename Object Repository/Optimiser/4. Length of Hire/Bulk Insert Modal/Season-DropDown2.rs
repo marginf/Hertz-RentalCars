@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Season-DropDown2</name>
+   <tag></tag>
+   <elementGuidId>60f47e46-8cfe-4fb5-ba14-89f4778ae3da</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;collapseExample&quot;]/div/div[3]/div[1]/div/div/ul/li[7]/a/label/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;collapseExample&quot;]/div/div[3]/div[1]/div/div/ul/li[7]/a/label/input</value>
+   </webElementProperties>
+</WebElementEntity>
