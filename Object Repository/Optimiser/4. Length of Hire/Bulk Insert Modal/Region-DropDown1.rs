@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Region-DropDown1</name>
+   <tag></tag>
+   <elementGuidId>8a5d5d62-3d48-405d-9177-653e59446260</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;collapseExample&quot;]/div/div[1]/div[1]/div/div/ul/li[2]/a/label/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;collapseExample&quot;]/div/div[1]/div[1]/div/div/ul/li[2]/a/label/input</value>
+   </webElementProperties>
+</WebElementEntity>

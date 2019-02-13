@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Sydney City - Recommended V Current</name>
+   <tag></tag>
+   <comment>Define Custom Path where file needs to be downloaded
+Verifying the file is downloaded to the User defined Path with Todays Date attached
+Creating an object for File and passing the download Path as argument
+Creating an Array where it will store all the files from that folder
+Iterating a loop for number of files available in the folder to verify file name in the folder
+Verifying the file name is available in the folder 
+If the file is found then it will return a value as true</comment>
+   <testCaseGuid>bc2e9a2a-3784-4632-a1c9-fe178c109aad</testCaseGuid>
+   <variable>
+      <defaultValue>'54321'</defaultValue>
+      <description>User Password</description>
+      <id>2206b59a-e705-4494-be91-156e51f21199</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>'c8df74d6-1c73-4e7d-af4d-ffa3c1717f59'</defaultValue>
+      <description>Australian Market</description>
+      <id>df663327-36c2-4fe0-8dbe-d841eef6f8fd</id>
+      <masked>false</masked>
+      <name>Australia</name>
+   </variable>
+   <variable>
+      <defaultValue>'a294f92e-0f69-40ad-b3fa-0541c9ed426a'</defaultValue>
+      <description>Mexico Market</description>
+      <id>413dd933-e679-4be6-b4fd-7443f599c492</id>
+      <masked>false</masked>
+      <name>Mexico</name>
+   </variable>
+   <variable>
+      <defaultValue>'75780ae2-0017-491d-a448-a35d15bf89bc'</defaultValue>
+      <description>USA Market</description>
+      <id>640c3d21-8ef7-4673-8d46-c32e7ed8ab66</id>
+      <masked>false</masked>
+      <name>USA</name>
+   </variable>
+   <variable>
+      <defaultValue>'70f5f79f-e17f-414f-959d-d3c130fa66cc'</defaultValue>
+      <description>UK Market</description>
+      <id>957c5abd-561b-4d0a-9c07-dac9421c25b4</id>
+      <masked>false</masked>
+      <name>UK</name>
+   </variable>
+   <variable>
+      <defaultValue>'1b963b1f-5ccf-436c-b965-38b18aa0588b'</defaultValue>
+      <description>Canada Market</description>
+      <id>085327c9-cc7c-44d3-b4a1-b65fe5390bb9</id>
+      <masked>false</masked>
+      <name>Canada</name>
+   </variable>
+   <variable>
+      <defaultValue>'33d97d2f-3d15-4dbf-9df6-7c2c4ee376ff'</defaultValue>
+      <description>NZ Market</description>
+      <id>468299d1-21d0-4b8d-b1ce-42cb782f5775</id>
+      <masked>false</masked>
+      <name>NZ</name>
+   </variable>
+</TestCaseEntity>

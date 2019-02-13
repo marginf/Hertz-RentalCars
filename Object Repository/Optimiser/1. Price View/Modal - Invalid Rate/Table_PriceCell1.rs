@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Table_PriceCell1</name>
+   <tag></tag>
+   <elementGuidId>eb3d38c3-98cc-44be-9a1b-0a01003ffb4a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;inVildRatesTable&quot;]/tbody/tr[1]/td[5]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;inVildRatesTable&quot;]/tbody/tr[1]/td[5]</value>
+   </webElementProperties>
+</WebElementEntity>
