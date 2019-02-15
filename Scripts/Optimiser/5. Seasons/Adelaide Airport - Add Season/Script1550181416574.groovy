@@ -73,11 +73,12 @@ WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Modal_Close'
 WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Modal_Close'))
 
 //Return to Season Page iframe
-WebUI.focus(findTestObject('Optimiser/5. Seasons/iframe_Regional Season_PageCon'))
-WebUI.switchToFrame(findTestObject('Optimiser/5. Seasons/iframe_Regional Season_PageCon'),1)
+//WebUI.focus(findTestObject('Optimiser/5. Seasons/iframe_Regional Season_PageCon'))
+//WebUI.switchToFrame(findTestObject('Optimiser/5. Seasons/iframe_Regional Season_PageCon'),1)
 
 //Input Search criteria into Search field
-WebUI.setText(findTestObject('Optimiser/5. Seasons/Search_Field', SearchDate))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Search_Field'))
+WebUI.setText(findTestObject('Optimiser/5. Seasons/Search_Field'), SearchDate)
 
 // Select Search button
 WebUI.click(findTestObject('Optimiser/5. Seasons/button_Season_Search'))
@@ -91,15 +92,19 @@ WebUI.uncheck(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Cell'))
 
 // Select Delete Button
 WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Delete'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/button_Season-Delete'))
 
 // Select Cancel button on Modal form
 WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Cancel Delete'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Cancel Delete'))
 
 // Select Delete Button
 WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Delete'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Cancel Delete'))
 
-// Select Cancel button on Modal form
+// Select OK button on Modal form
 WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Confirm Delete'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Confirm Delete'))
 
 //Log User out
 WebUI.switchToDefaultContent()
