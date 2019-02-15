@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Season-Search</name>
+   <name>button_Season_Search</name>
    <tag></tag>
    <elementGuidId>54a79190-6fbc-4245-8340-26d762124a2a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='addButton']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//button[@id = 'search' and (text() = 'Search' or . = 'Search') and @ref_element = 'Object Repository/Seasons - Add-Delete/Page_Car Rental - Portal/iframe_Regional Season_PageCon']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='addButton']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
