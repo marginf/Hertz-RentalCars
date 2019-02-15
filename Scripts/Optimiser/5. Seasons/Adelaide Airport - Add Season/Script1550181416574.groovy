@@ -18,9 +18,6 @@ import com.kms.katalon.core.exception.StepErrorException as StepErrorException
 import org.testng.Assert as Assert
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
-Date today = new Date()
-String todaysDate = today.format("yyyyMMdd")
-
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 //'User logs into MF'
@@ -46,31 +43,63 @@ WebUI.click(findTestObject('Optimiser/5. Seasons/Select_Region'))
 WebUI.selectOptionByIndex(findTestObject('Optimiser/5. Seasons/Select_Region'),0)
 WebUI.click(findTestObject('Optimiser/5. Seasons/Select_Region'))
 
-//WebUI.comment("Click Add button')
+// Click Add button
 WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Add'))
 WebUI.click(findTestObject('Optimiser/5. Seasons/button_Season-Add'))
-WebUI.delay(1)
-WebUI.setText(findTestObject('Optimiser/5. Seasons/Season Add - Modal/input_Name_seasonName'), 'Robot Season1')
-WebUI.delay(1)
-WebUI.click(findTestObject('Optimiser/5. Seasons/Season Add - Modal/input_Date Range_daterange'))
-WebUI.delay(1)
-WebUI.click(findTestObject('Optimiser/5. Seasons/Season Add - Modal/td_20'))
-WebUI.delay(1)
-WebUI.click(findTestObject('Optimiser/5. Seasons/Season Add - Modal/td_26'))
-WebUI.click(findTestObject('Optimiser/5. Seasons/Season Add - Modal/button_Apply'))
-WebUI.focus(findTestObject('Optimiser/5. Seasons/Season Add - Modal/button_Save'))
-WebUI.click(findTestObject('Optimiser/5. Seasons/Season Add - Modal/button_Save'))
+// Modal form displays
+WebUI.setText(findTestObject('Optimiser/5. Seasons/Modal - Season Add/input_Name_seasonName'), 'Robot Season1')
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/input_Date Range_daterange'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Date_Picker_Right_Arrow'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/td_20'))
+TDay1 = WebUI.getText(findTestObject('Optimiser/5. Seasons/Modal - Season Add/td_20'))
+TMonth1 = WebUI.getText(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Month_text'))
+TMonth1L = TMonth1.substring(0,3)
+SearchDate = WebUI.concatenate(TMonth1L,'-',TDay1)
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Date_Picker_Right_Arrow'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/td_1'))
+// Apply date range
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/button_Apply'))
+// Save modal form
+WebUI.scrollToElement(findTestObject('Optimiser/5. Seasons/Modal - Season Add/button_Save'),1)
+WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Season Add/button_Save'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/button_Save'))
 'Update confirmation message'
 'Get text alert on the alert when it\'s shown'
 //alertText = WebUI.getAlertText()
 'Verify text alert is correct or not'
 WebUI.verifyTextPresent('Updating season and Setting default LOH and Rule!',false) 
 
-WebUI.focus(findTestObject('Optimiser/5. Seasons/Season Add - Modal/Modal_Close'))
-WebUI.click(findTestObject('Optimiser/5. Seasons/Season Add - Modal/Modal_Close'))
+WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Modal_Close'))
+WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Modal_Close'))
 
-//Return to Price View Page iframe
+//Return to Season Page iframe
+WebUI.focus(findTestObject('Optimiser/5. Seasons/iframe_Regional Season_PageCon'))
 WebUI.switchToFrame(findTestObject('Optimiser/5. Seasons/iframe_Regional Season_PageCon'),1)
+
+//Input Search criteria into Search field
+WebUI.setText(findTestObject('Optimiser/5. Seasons/Search_Field', SearchDate))
+
+// Select Search button
+WebUI.click(findTestObject('Optimiser/5. Seasons/button_Season_Search'))
+
+//Verify Search Date matches Input date
+WebUI.verifyMatch(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Cell'),SearchDate)
+
+// Select Data Cell Checkbox
+WebUI.focus(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Checkbox'))
+WebUI.uncheck(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Cell'))
+
+// Select Delete Button
+WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Delete'))
+
+// Select Cancel button on Modal form
+WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Cancel Delete'))
+
+// Select Delete Button
+WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Delete'))
+
+// Select Cancel button on Modal form
+WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Confirm Delete'))
 
 //Log User out
 WebUI.switchToDefaultContent()

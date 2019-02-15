@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_26</name>
+   <name>td_1</name>
    <tag></tag>
    <elementGuidId>f655d1b5-102e-4714-bbb1-5b42d5f2d108</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//td[(text() = '26' or . = '26') and @ref_element = 'Object Repository/Season Add - Modal/Page_Car Rental - Portal/iframe_Regional Season_PageCon']</value>
+         <value>//td[(text() = '1' or . = '1')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,32 +20,11 @@
       <value>td</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>weekend active end-date in-range available</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-title</name>
-      <type>Main</type>
-      <value>r3c6</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>26</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>/html[1]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;daterangepicker dropdown-menu ltr show-calendar opensright&quot;]/div[@class=&quot;calendar left&quot;]/div[@class=&quot;calendar-table&quot;]/table[@class=&quot;table-condensed&quot;]/tbody[1]/tr[4]/td[@class=&quot;weekend active end-date in-range available&quot;]</value>
+      <value>1</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
