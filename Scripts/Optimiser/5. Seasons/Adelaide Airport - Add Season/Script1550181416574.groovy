@@ -43,6 +43,10 @@ WebUI.click(findTestObject('Optimiser/5. Seasons/Select_Region'))
 WebUI.selectOptionByIndex(findTestObject('Optimiser/5. Seasons/Select_Region'),0)
 WebUI.click(findTestObject('Optimiser/5. Seasons/Select_Region'))
 
+// Select Search button
+WebUI.click(findTestObject('Optimiser/5. Seasons/button_Season_Search'))
+WebUI.waitForPageLoad(2)
+
 // Click Add button
 WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Add'))
 WebUI.click(findTestObject('Optimiser/5. Seasons/button_Season-Add'))
@@ -67,7 +71,7 @@ WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/button_Save'
 'Get text alert on the alert when it\'s shown'
 //alertText = WebUI.getAlertText()
 'Verify text alert is correct or not'
-WebUI.verifyTextPresent('Updating season and Setting default LOH and Rule!',false) 
+WebUI.verifyTextPresent('Updating season and Setting default LOH and Rule!',false)
 
 WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Modal_Close'))
 WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Modal_Close'))
@@ -80,15 +84,25 @@ WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Season Add/Modal_Close'
 WebUI.click(findTestObject('Optimiser/5. Seasons/Search_Field'))
 WebUI.setText(findTestObject('Optimiser/5. Seasons/Search_Field'), SearchDate)
 
-// Select Search button
-WebUI.click(findTestObject('Optimiser/5. Seasons/button_Season_Search'))
-
 //Verify Search Date matches Input date
-WebUI.verifyMatch(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Cell'),SearchDate)
+Cell_Text = WebUI.getText(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Cell'))
+WebUI.verifyMatch(Cell_Text,SearchDate, true)
+
+//Select Status Link
+WebUI.verifyMatch(WebUI.getText(findTestObject('Optimiser/5. Seasons/Search_Results_Status')),'Inactive', true)
+WebUI.click(findTestObject('Optimiser/5. Seasons/Search_Results_Status'))
+
+//Input Search criteria into Search field
+WebUI.click(findTestObject('Optimiser/5. Seasons/Search_Field'))
+WebUI.setText(findTestObject('Optimiser/5. Seasons/Search_Field'), SearchDate)
+
+//Select Status Link
+WebUI.verifyMatch(WebUI.getText(findTestObject('Optimiser/5. Seasons/Search_Results_Status')),'Active', true)
+WebUI.click(findTestObject('Optimiser/5. Seasons/Search_Results_Status'))
 
 // Select Data Cell Checkbox
 WebUI.focus(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Checkbox'))
-WebUI.uncheck(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Cell'))
+WebUI.check(findTestObject('Optimiser/5. Seasons/Search_Results_Date_Cell'))
 
 // Select Delete Button
 WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Delete'))
@@ -101,6 +115,8 @@ WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Cancel De
 // Select Delete Button
 WebUI.focus(findTestObject('Optimiser/5. Seasons/button_Season-Delete'))
 WebUI.click(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Cancel Delete'))
+'Verify text alert is correct or not'
+WebUI.verifyTextPresent('Delete Successfully',false)
 
 // Select OK button on Modal form
 WebUI.focus(findTestObject('Optimiser/5. Seasons/Modal - Delete/Button_Confirm Delete'))
